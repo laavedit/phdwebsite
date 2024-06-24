@@ -1,0 +1,94 @@
+/* Base styles for the header container */
+.header {
+  height: 60vh; /* Adjusted for better aspect ratio */
+  margin: 30px auto;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.header .react-parallax-bgimage {
+  filter: brightness(0.5); /* Add overlay effect directly to the background image */
+}
+
+/* Update styles for the header contents */
+.header-contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center align both horizontally and vertically */
+  text-align: center; /* Center align text */
+  z-index: 1; /* Ensure header contents appear above the overlay */
+}
+
+/* Update styles for the header title */
+.header-contents h2 {
+  font-weight: 500;
+  color: #ffffff; /* White text color for better readability */
+  font-size: calc(16px + 1vw); /* Responsive font size */
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Apply hover effect on header title */
+.header-contents h2:hover {
+  transform: scale(1.05); /* Apply a slight zoom effect on hover */
+}
+
+/* Update styles for the header text */
+.header-contents p {
+  color: #ffffff; /* White text color for better readability */
+  font-size: max(1vw, 12px);
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Apply hover effect on header text */
+.header-contents p:hover {
+  transform: scale(1.05); /* Apply a slight zoom effect on hover */
+}
+
+/* Update styles for the header button */
+.header-contents button {
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #3a5ca7; /* Match the color with the navbar */
+  font-size: max(1vw, 12px);
+  border-radius: 50px;
+  margin-top: 10px; /* Add margin top for spacing */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+/* Apply hover effect on header button */
+.header-contents button:hover {
+  background-color: #c27f37;
+  transform: scale(1.05); /* Apply a slight zoom effect on hover */
+}
+
+@media (max-width: 1050px) {
+  .header {
+    height: 50vh; /* Adjusted for smaller screens */
+  }
+}
+
+@media (max-width: 740px) {
+  .header {
+    height: 20vh; /* Further adjustment for smaller screens */
+  }
+  .header-contents {
+    padding: 0 1%; /* Reduce padding for smaller screens */
+  }
+  .header-contents h2 {
+    font-size: calc(12px + 0.5vw); /* Adjust font size for smaller screens */
+    margin-bottom: 2px; /* Reduce margin bottom for spacing */
+  }
+  .header-contents p {
+    display: none; /* Hide text on smaller screens */
+    font-size: calc(10px + 1vw); /* Adjust font size for smaller screens */
+  }
+  .header-contents button {
+    padding: 6px 9px; /* Adjust button padding */
+    font-size: calc(8px + 0.5vw); /* Adjust button font size */
+    border-radius: 25px; /* Adjust border radius for smaller screens */
+  }
+}

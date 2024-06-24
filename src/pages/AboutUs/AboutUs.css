@@ -1,0 +1,66 @@
+/* AboutUs.css */
+
+.about-us {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+  
+.about-us__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.about-us__title {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #3a5ca7;
+    text-align: center;
+}
+  
+.about-us__description {
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-size: 18px;  
+    color: #808080;
+}
+.newsletter-section  {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about-us__main {
+    margin-bottom: 20px;
+}
+  
+.about-us__section {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+  
+.about-us__section-title {
+    font-weight: 500;
+    color: #3a5ca7;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.about-us__map {
+    margin-top: 40px;
+    text-align: center;
+    width: 400px;
+    height: 300px; /* Reduced height for the map */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflow to keep map contained */
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us__map {
+        height: 200px; /* Reduced height for map on smaller screens */
+    }
+}

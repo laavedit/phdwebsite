@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+  padding:  0;
+  margin: 0;
+  box-sizing: border-box;  
+  font-family: 'Teachers';
+}
+
+body {
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.app{
+  width: 80%;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

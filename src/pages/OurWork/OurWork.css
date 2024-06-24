@@ -1,0 +1,78 @@
+/* Base styles for the our-work container */
+.our-work {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f4f4f4; /* Light grey background for contrast */
+}
+
+/* Title styling */
+.our-work h1 {
+  font-weight: 500;
+  color: #3a5ca7;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Text styling */
+.our-work-text {
+  max-width: 60%;
+  color: #808080;
+  margin: 0 auto 20px;
+  font-size: 16px;
+}
+
+/* Grid container for cards */
+.our-work-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+  gap: 20px; /* Spacing between columns */
+  justify-content: center; /* Center the grid horizontally */
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-sizing: none;
+}
+
+/* Expanded project details */
+.our-work-details {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px; /* Increase margin to separate from cards */
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 1500px; /* Adjust width as needed */
+  align-self: flex-start; /* Align details to the top */
+}
+
+/* Call to action styling */
+.our-work-cta {
+  margin-top: 40px;
+  font-size: 18px;
+  color: #3a5ca7;
+  margin: 20px 20px;
+  padding: 10px 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .our-work-text {
+    max-width: 80%;
+  }
+  
+  .our-work-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-work-text {
+    max-width: 100%;
+  }
+  
+  .our-work-list {
+    grid-template-columns: 1fr; /* 1 column on mobile screens */
+  }
+}

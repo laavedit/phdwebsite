@@ -1,0 +1,28 @@
+/* ImpactMetrics.css */
+
+.metrics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.metric-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.metric-item h3 {
+    font-size: 1.5rem;
+    color: #3a5ca7;
+    margin-bottom: 10px;
+}
+
+.metric-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}

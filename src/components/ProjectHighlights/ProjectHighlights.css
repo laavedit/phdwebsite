@@ -1,0 +1,25 @@
+/* ProjectHighlights.css */
+
+.project-container {
+    margin-top: 30px;
+}
+
+.project-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #3a5ca7;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}

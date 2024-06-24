@@ -1,0 +1,44 @@
+/* Card styling */
+.our-work-card {
+    background-color: #ffffff; /* White background for the cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 20px; /* Padding inside the cards */
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s, color 0.2s; /* Smooth transitions */
+    cursor: pointer; /* Add a cursor pointer to indicate clickability */
+    width: 200px; /* Fixed width for each card */
+    max-width: 100%; /* Maximum width of each card */
+
+  }
+  
+  .our-work-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .our-work-card .our-work-item-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.2s;
+  }
+  
+  .our-work-card.clicked {
+    transform: scale(1.05); /* Slightly enlarge the card when clicked */
+    border:2px solid #3a5ca7;
+  }
+  
+  .our-work-card .work-details {
+    margin-top: 10px;
+  }
+  
+  .our-work-card .work-details h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  
+  .our-work-card .work-details p {
+    font-size: 14px;
+    color: #808080;
+  }
+  

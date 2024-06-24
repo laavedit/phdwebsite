@@ -1,0 +1,98 @@
+/* Blog.css */
+.blog-container {
+    padding: 40px; /* Increase padding for better spacing */
+}
+
+.blog-title {
+    font-size: 2rem;
+    color: #3a5ca7;
+    margin-bottom: 10px; /* Reduce margin for better alignment */
+    text-align: center; /* Align text to center */
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Add gap between blog posts */
+    margin-top: 20px; /* Add margin to separate from title */
+    
+}
+
+.blog-post {
+    flex: 0 0 calc(33.333% - 20px); /* Adjust width for better fit */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    position: relative; /* Add position relative */
+    overflow: hidden; /* Hide overflow to prevent image overflow */
+}
+
+.blog-post img {
+    width: 100%; /* Set image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Apply border-radius to make it squircle */
+    object-fit: cover; /* Scale the image to cover the entire container */
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Align image to the top */
+    left: 0; /* Align image to the left */
+}
+
+.blog-post-content {
+    color: #808080;
+    position: relative; /* Add position relative */
+    z-index: 1; /* Ensure text appears above the image */
+    margin-top: 20px; /* Add margin to separate from image */
+}
+
+.blog-post-title {
+    font-size: 1.2rem; /* Decrease font size slightly */
+    color: #3a5ca7;
+    margin-bottom: 0px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin to separate from blog posts */
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #3a5ca7;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-dot:hover {
+    background-color: #3a5ca7;
+}
+
+/* Hide numbers */
+.pagination span {
+    display: none;
+}
+
+/* Add hover effect to blog post */
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add cursor pointer to indicate clickable */
+.blog-post:hover, .blog-post.clicked {
+    cursor: pointer;
+}
+
+/* Add outline when clicked */
+.blog-post.clicked {
+    outline: 2px solid #3a5ca7;
+}
