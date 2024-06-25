@@ -9,24 +9,24 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <div className='navbar'>
-      <Link to="/">
+      <Link to="/phdwebsite">
         <img src={assets.logo} alt='logo' className='logo' />
       </Link>
       <ul className="navbar-menu">
-        <li className={path === '/' ? 'active' : ""}>
-          <Link to="/" className={path === '/' ? 'active' : ""}>Home</Link>
+        <li className={path === '/phdwebsite' ? 'active' : ""}>
+          <Link to="/phdwebsite" className={path === '/phdwebsite' ? 'active' : ""}>Home</Link>
         </li>
-        <li className={path === '/work' ? 'active' : ""}>
-          <Link to="/work" className={path === '/work' ? 'active' : ""}>Our Work</Link>
+        <li className={path === '/phdwebsite/work' ? 'active' : ""}>
+          <Link to="/phdwebsite/work" className={path === '/phdwebsite/work' ? 'active' : ""}>Our Work</Link>
         </li>
-        {/* <li className={path === '/blog' ? 'active' : ""}>
-          <Link to="/blog" className={path === '/blog' ? 'active' : ""}>Blogs</Link>
+        {/* <li className={path === '/phdwebsite/blog' ? 'active' : ""}>
+          <Link to="/phdwebsite/blog" className={path === '/phdwebsite/blog' ? 'active' : ""}>Blogs</Link>
         </li> */}
-        <li className={path === '/careers' ? 'active' : ""}>
-          <Link to="/careers" className={path === '/careers' ? 'active' : ""}>Careers</Link>
+        <li className={path === '/phdwebsite/careers' ? 'active' : ""}>
+          <Link to="/phdwebsite/careers" className={path === '/phdwebsite/careers' ? 'active' : ""}>Careers</Link>
         </li>
-        <li className={path === '/about' ? 'active' : ""}>
-          <Link to="/about" className={path === '/about' ? 'active' : ""}>About Us</Link>
+        <li className={path === '/phdwebsite/about' ? 'active' : ""}>
+          <Link to="/phdwebsite/about" className={path === '/phdwebsite/about' ? 'active' : ""}>About Us</Link>
         </li>
       </ul>
       <div className='navbar-right'>
