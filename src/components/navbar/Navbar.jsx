@@ -9,7 +9,7 @@ const Navbar = ({ setShowLogin }) => {
 
   return (
     <div className='navbar'>
-      <Link to="/phdwebsite">
+      <Link to="/">
         <img src={assets.logo} alt='logo' className='logo' />
       </Link>
       <ul className="navbar-menu">
@@ -19,9 +19,6 @@ const Navbar = ({ setShowLogin }) => {
         <li className={path === '/phdwebsite/work' ? 'active' : ""}>
           <Link to="/phdwebsite/work" className={path === '/phdwebsite/work' ? 'active' : ""}>Our Work</Link>
         </li>
-        {/* <li className={path === '/phdwebsite/blog' ? 'active' : ""}>
-          <Link to="/phdwebsite/blog" className={path === '/phdwebsite/blog' ? 'active' : ""}>Blogs</Link>
-        </li> */}
         <li className={path === '/phdwebsite/careers' ? 'active' : ""}>
           <Link to="/phdwebsite/careers" className={path === '/phdwebsite/careers' ? 'active' : ""}>Careers</Link>
         </li>
