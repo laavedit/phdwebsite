@@ -19,11 +19,11 @@ const App = () => {
       <div className='app'>
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
-          <Route path='/phdwebsite/' element={<Home />} />
-          <Route path='/phdwebsite/about' element={<AboutUs />} />
-          <Route path='/phdwebsite/careers' element={<Careers />} />
-          <Route path='/phdwebsite/blog' element={<Blog />} />
-          <Route path='/phdwebsite/work' element={<OurWork category={category} setCategory={setCategory} />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/work" element={<OurWork category={category} setCategory={setCategory} />} />
         </Routes>
       </div>
       <Footer />
