@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
@@ -16,18 +16,16 @@ const App = () => {
   return (
     <>
       {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
-      <Router basename="/phdwebsite">
-        <div className='app'>
-          <Navbar setShowLogin={setShowLogin} />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<AboutUs />} />
-            <Route path='/careers' element={<Careers />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/work' element={<OurWork category={category} setCategory={setCategory} />} />
-          </Routes>
-        </div>
-      </Router>
+      <div className='app'>
+        <Navbar setShowLogin={setShowLogin} />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<AboutUs />} />
+          <Route path='/careers' element={<Careers />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/work' element={<OurWork category={category} setCategory={setCategory} />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   );
