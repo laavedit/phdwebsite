@@ -6,7 +6,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: false, // Enable source maps in development (default)
-    minify: 'terser', // Use terser for minification in production (default)
     rollupOptions: {
       output: {
         manualChunks: undefined, // Clear any manualChunks setting
