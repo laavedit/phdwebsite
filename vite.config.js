@@ -2,9 +2,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/phdwebsite/', // Replace with your GitHub Pages repository name
+  base: '/phdwebsite/', // Adjust base path as per your GitHub Pages setup
   plugins: [react()],
   build: {
-    sourcemap: true, // Enable source maps for easier debugging
+    sourcemap: false, // Enable source maps in development (default)
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // Clear any manualChunks setting
+      },
+    },
   },
 });
