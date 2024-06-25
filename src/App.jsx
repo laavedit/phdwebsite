@@ -16,8 +16,8 @@ const App = () => {
   return (
     <>
       {showLogin && <LoginPopup setShowLogin={setShowLogin} />}
-      <div className='app'>
-        <Router basename="/phdwebsite">
+      <Router basename="/phdwebsite">
+        <div className='app'>
           <Navbar setShowLogin={setShowLogin} />
           <Routes>
             <Route path='/' element={<Home />} />
@@ -26,8 +26,8 @@ const App = () => {
             <Route path='/blog' element={<Blog />} />
             <Route path='/work' element={<OurWork category={category} setCategory={setCategory} />} />
           </Routes>
-        </Router>
-      </div>
+        </div>
+      </Router>
       <Footer />
     </>
   );

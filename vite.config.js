@@ -2,9 +2,15 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/frontend/',
+  base: '/phdwebsite/', // Adjust base path as per your GitHub Pages setup
   plugins: [react()],
   build: {
-    sourcemap: false, // Disable source maps in production build
+    sourcemap: false, // Enable source maps in development (default)
+    minify: 'terser', // Use terser for minification in production (default)
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // Clear any manualChunks setting
+      },
+    },
   },
 });
