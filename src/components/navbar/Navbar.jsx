@@ -7,6 +7,8 @@ const Navbar = ({ setShowLogin }) => {
   const location = useLocation();
   const path = location.pathname;
 
+  console.log('Current Path:', path); // Debugging: Check if path matches expected values
+
   return (
     <div className='navbar'>
       <Link to="/">
@@ -14,16 +16,16 @@ const Navbar = ({ setShowLogin }) => {
       </Link>
       <ul className="navbar-menu">
         <li className={path === '/phdwebsite' ? 'active' : ""}>
-          <Link to="/phdwebsite" className={path === '/phdwebsite' ? 'active' : ""}>Home</Link>
+          <Link to="/" className={path === '/phdwebsite' ? 'active' : ""}>Home</Link>
         </li>
         <li className={path === '/phdwebsite/work' ? 'active' : ""}>
-          <Link to="/phdwebsite/work" className={path === '/phdwebsite/work' ? 'active' : ""}>Our Work</Link>
+          <Link to="/work" className={path === '/phdwebsite/work' ? 'active' : ""}>Our Work</Link>
         </li>
         <li className={path === '/phdwebsite/careers' ? 'active' : ""}>
-          <Link to="/phdwebsite/careers" className={path === '/phdwebsite/careers' ? 'active' : ""}>Careers</Link>
+          <Link to="/careers" className={path === '/phdwebsite/careers' ? 'active' : ""}>Careers</Link>
         </li>
         <li className={path === '/phdwebsite/about' ? 'active' : ""}>
-          <Link to="/phdwebsite/about" className={path === '/phdwebsite/about' ? 'active' : ""}>About Us</Link>
+          <Link to="/about" className={path === '/phdwebsite/about' ? 'active' : ""}>About Us</Link>
         </li>
       </ul>
       <div className='navbar-right'>

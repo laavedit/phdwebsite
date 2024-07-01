@@ -14,6 +14,7 @@ import Map from './map.jpg';
 import header_img from './header_img.jpg';
 import header_img2 from './header_img2.jpg';
 import header_img4 from './header_img4.jpg';
+import CFR from './Cfr.jpeg'
 
 export const assets = {
   logo,
@@ -78,6 +79,10 @@ export const blogPosts = [
     title: 'GIS Study',
     content: 'As part of POPGT, we also launched the Maps and Trails initiative to promote sustainable tourism in the region. The initiative aims to create a network of trails and maps for tourists to explore the region in an eco-friendly and sustainable manner. The maps highlight key attractions, trekking routes, and eco-friendly accommodations to help tourists make informed decisions and reduce their environmental impact. By promoting sustainable tourism practices, we hope to protect the environment and support local communities in the region.',
     image: Map // Corrected image assignment
-  }
-  // Add more blog posts as needed
+  },
+ { id: 3,
+  title :'CFR Rights',
+  content : 'The FRA, Forest Rights Act is a crucial legislation that empowers local communities to manage and protect their forest resources. Under this act, communities can claim their rights over forest lands and resources, enabling them to sustainably manage these resources for their livelihoods. At PHD, we work closely with local communities to help them secure their CFR rights and build their capacity to manage their forest resources effectively. By empowering communities to protect and manage their forests, we aim to promote sustainable development and conservation in the region.',
+  image: CFR
+}// Add more blog posts as needed
 ];
